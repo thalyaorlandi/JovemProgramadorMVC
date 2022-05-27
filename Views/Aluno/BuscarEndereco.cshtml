@@ -1,0 +1,27 @@
+﻿@model EnderecoModel
+<form>
+    <div class="mb-3">
+        <label for="logradouro" class="form-label">Logradouro</label>
+        <input type="text" class="form-control col-6" asp-for="Logradouro">
+    </div>
+    <div class="mb-3">
+        <label for="complemento" class="form-label">Complemento</label>
+        <input type="text" class="form-control col-4" asp-for="Complemento">
+    </div>
+    <div class="mb-3">
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control col-6" asp-for="Bairro">
+    </div>
+    <div class="mb-3">
+        <label for="localidade" class="form-label">Localidade</label>
+        <input type="text" class="form-control col-6" asp-for="Localidade">
+    </div>
+    <div class="mb-3">
+        <label for="uf" class="form-label">Uf</label>
+        <input type="text" class="form-control col-1" asp-for="Uf">
+    </div>
+    <div class="mb-3">
+        <label for="ddd" class="form-label">DDD</label>
+        <input type="text" class="form-control col-1" asp-for="Ddd">
+    </div>
+</form>

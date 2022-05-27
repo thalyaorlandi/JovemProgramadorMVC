@@ -1,0 +1,29 @@
+﻿@model AlunoModel
+
+<form asp-controller="Aluno" asp-action="Inserir" method="post">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control col-7">
+    </div>
+    <div class="mb-3">
+        <label for="idade" class="form-label">Idade</label>
+        <input type="number" asp-for="Idade" class="form-control col-1">
+    </div>
+    <div class="mb-3">
+        <label for="contato" class="form-label">Contato</label>
+        <input type="text" asp-for="Contato" class="form-control col-4" placeholder="(00) 00000-0000">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" asp-for="Email" class="form-control col-4">
+    </div>
+    <div class="mb-3">
+        <label for="cep" class="form-label">Cep</label>
+        <input type="text" asp-for="Cep" class="form-control col-4" placeholder="00000-000">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-center">
+        <button type="submit" class="btn btn-primary" style="margin-right:5px">Adicionar</button>
+        <a class="btn btn-primary" type="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
+    </div>
+</form>

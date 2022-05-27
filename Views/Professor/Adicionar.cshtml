@@ -1,0 +1,27 @@
+﻿<form method="post" action="Adicionado">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control col-7">
+    </div>
+    <div class="mb-3">
+        <label for="idade" class="form-label">Idade</label>
+        <input type="number" class="form-control col-1">
+    </div>
+    <div class="mb-3">
+        <label for="contato" class="form-label">Contato</label>
+        <input type="text" class="form-control col-4" placeholder="(00) 00000-0000">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control col-4">
+    </div>
+    <div class="mb-3">
+        <label for="cep" class="form-label">Cep</label>
+        <input type="text" class="form-control col-4" placeholder="00000-000">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-center">
+        <button type="submit" class="btn btn-primary" style="margin-right:5px">Adicionar</button>
+        <a class="btn btn-primary" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
+    </div>
+</form>
